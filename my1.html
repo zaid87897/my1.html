@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock My Letter</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Georgia', serif; /* Emotional font choice */
+            background-color: #f3e5f5; /* Soft pastel background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container styles */
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            border: 1px solid #d8a0e4;
+        }
+
+        /* Heading styles */
+        h2 {
+            color: #8e44ad;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Button styles */
+        button {
+            padding: 12px 25px;
+            background-color: #8e44ad; /* Soft purple color */
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        button:hover {
+            background-color: #9b59b6;
+        }
+
+        /* Letter container */
+        .letter {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9e5f6; /* Light pinkish color */
+            border-radius: 10px;
+            border: 1px solid #d8a0e4;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        /* Letter content styling */
+        .letter-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #6c3483; /* Dark purple for deep emotional feeling */
+            font-family: 'Georgia', serif; /* Emotional, elegant font */
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #8e44ad;
+            margin-bottom: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Enter Our Special Date</h2>
+        <p>To unlock my letter, enter the correct date.</p>
+        <input type="date" id="specialDate">
+        <button onclick="checkDate()">Unlock Letter</button>
+        <div id="letter" class="letter">
+            <h3>My Special Letter</h3>
+            <p class="letter-content">
+                My Dearest Love, <br><br>
+                From the moment we met, I felt something deep within me, a bond that I can't explain, but I know in my heart it's meant to be. <br><br>
+                Even when the world tried to pull us apart, I fought for us, because my love for you is unwavering. No distance, no time, no obstacle can change that. <br><br>
+                Every second spent apart feels like an eternity, but I carry you in my heart, always. You are the one who completes me, and I will never stop believing in us. <br><br>
+                Please know that this letter is a promise—my love for you is forever, and I will stand by you, no matter what. You are my soulmate, my one and only. ❤️ <br><br>
+                Forever yours, <br>
+                [Your Name]
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Logic
+        function checkDate() {
+            // Set the special date (you can customize this)
+            var correctDate = "2024-12-16"; // Replace with your anniversary date
+            var inputDate = document.getElementById("specialDate").value;
+            
+            // Compare entered date with the correct date
+            if (inputDate === correctDate) {
+                document.getElementById("letter").style.display = "block"; // Show the letter
+            } else {
+                alert("Sorry, the date you entered is incorrect.");
+            }
+        }
+    </script>
+
+</body>
+</html>
